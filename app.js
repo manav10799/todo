@@ -19,16 +19,11 @@ const itemsSchema={
 const Item=mongoose.model("Item",itemsSchema);
 
 const item1=new Item({
-  name:"Fuck Everyone",
-});
-const item2=new Item({
-  name:"Leave India",
-});
-const item3=new Item({
-  name:"New York Rocks",
+  name:"Hello There!",
 });
 
-const defaultItems=[item1,item2,item3];
+
+const defaultItems=[item1];
 const listSchema={
   name:String,
   items:[itemsSchema]
